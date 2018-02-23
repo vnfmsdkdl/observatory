@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>시립서울천문대 - 천문대소개</title>
+    <!-- jQuery CDN (**always Top**)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery UI CDN (and next...)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--font awesome-->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!--style.CSS-->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index_1.js"></script>
+	<script src='js/prefixfree.min.js'></script>
+</head>
+<body id="sub2">
+<div class="page">
+    <header>
+        <div id="header_wrap">
+            <h1 id="logo"><a href="index.html"><img src="images/logo_160_white.png" alt="시립서울천문대"></a></h1>
+            <h1 id="mobile_nav"><button><i class="fas fa-bars" onclick="mobile_navon()"></i></button></h1>
+            <h1 id="mobile_login"><button><i class="fas fa-user-circle"></i></button></h1>
+            <nav id="gnb" class='nav_off'>
+                <ul>
+                    <li><a href="sub1.html">천문대소개</a>
+                        <ul class="depth2">
+                            <li><a href="sub1.html">천문대 소개</a></li>
+                            <li><a href="sub1.html">이용요금</a></li>
+                            <li><a href="sub1.html">이용안내</a></li>
+                            <li><a href="sub1.html">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a>시설안내</a>
+                        <ul class="depth2">
+                            <li><a href="#">별찬</a></li>
+                            <li><a href="#">별오름</a></li>
+                            <li><a href="#">천체망원경<br>실습교육장</a></li>
+                            <li><a href="#">천체과학교육실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub2.html">프로그램</a>
+                        <ul class="depth2">
+                            <li><a href="sub2.html">교육 프로그램</a></li>
+                            <li><a href="sub2.html">체험 프로그램</a></li>
+                            <li><a href="sub2.html">문화 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li><a>예약</a>
+                        <ul class="depth2">
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">환불규정</a></li>
+                        </ul>
+                    </li>
+                    <li><a>천문소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">천문우주 이야기</a></li>
+                            <li><a href="#">천문우주 소식지</a></li>
+                    </ul>
+                    </li>
+                    <li><a>참여마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">이용후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>        
+            <nav id="nav_sub">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--end header-->
+    <!---------start section 여기서부터 변경------------------------->
+    <section id="sub2_bg_fixed">
+        <div class="frame">
+            <div class="sub_content_wrap">
+                <article id="sub2_title">
+                    <h2 class="sub_section_title">프로그램</h2>
+                    <h3 class="article_title">다양하게 개설된 천문 프로그램을 만나보세요.</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div id="sub2_menu_tab">
+       <div>
+         <div class="sub_content_wrap">
+            <ul>
+                <li><button onclick="moveToContent('1')">교육프로그램</button></li>
+                <li><button onclick="moveToContent('2')">체험프로그램</button></li>
+                <li><button onclick="moveToContent('3')">문화프로그램</button></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!-- 교육프로그램 -->
+    <section id="sub2_content1">
+       <div class="frame">
+           <div class="sub_content_wrap">
+                <h4 id="sub2_content_title1" class="article_subtitle">교육 프로그램</h4>
+                <!--h5-->
+                
+                    <div class="h5_wrap">
+                        <h5 class="sub_content_title menu1_tab_btn selected" rel="menu1_tab1">도심 속 별빛산책</h5>
+                        <h5 class="sub_content_title menu1_tab_btn" rel="menu1_tab2">단체 별자리여행</h5>
+                        <h5 class="sub_content_title menu1_tab_btn" rel="menu1_tab3">방방곡곡 천문학투어</h5>
+                        <h5 class="sub_content_title menu1_tab_btn" rel="menu1_tab4">천문과학 지식봉사동아리</h5>
+                    </div>
+                
+                <!--start-->
+                <div class="p_wrap menu1_tabbox" id="menu1_tab1">
+                    <h6 class="sub_content_subtitle">함께하는 도심 속 별빛산책</h6>
+                       <p class="article_text">
+                        밤하늘이 들려주는 아름다운 별들의 이야기와 함께하는 일일 2시간 체험프로그램으로 여러분을 초대합니다.<br><br>
+                        <span class="sub2_span_style">일시</span>매주 금,토요일 19:00~21:00/ 하절기 19:30~21:30 / 1월,8월 중 토요일 14:00~16:00<br>
+                        <span class="sub2_span_style">대상</span>6세 이상 아동, 청소년, 성인 / 1회 정원 70명<br>
+                        <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관)<br>
+                        <span class="sub2_span_style">참가비</span>유아 2000원, 청소년 3000원, 성인 4500원<br>
+                        <span class="sub2_span_style">신청</span>홈페이지 예약을 통한 선착순 접수(매달 20일 경 서버오픈)</p>
+                    <div class="sub2_img_wrap">
+                       <div class="imgcontents1_01"></div>
+                        <div class="imgcontents1_02"></div>
+                        <div class="imgcontents1_03"></div>
+                    </div>                    
+                    <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+                </div>
+             
+               <!-- end 도심속별빛산책 -->
+                <!--단체별자리여행-->
+                
+                <div class="p_wrap menu1_tabbox" id="menu1_tab2">
+                    <h6 class="sub_content_subtitle">친구들과 함께하는 단체별자리여행</h6>
+                    
+                    <p class="article_text">교과과정을 중심으로 연령대별 분화 심화된 수요자 욕구에 따라 맞춤 프로그램으로 구성 <br><br>
+                        <span class="sub2_span_style">일시</span>연중(사전 전화협의) / 1회 2시간 ~ 방일제, 전일제 프로그램으로도 구성가능<br>
+                        <span class="sub2_span_style">대상</span>6세 이상 아동, 청소년 대상(25명 이상 단체)<br>
+                        <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관)<br>
+                        <span class="sub2_span_style">참가비</span>유아 2500원, 청소년 3500원, 성인 4500원/인솔자 기본 1인 무료<br>
+                        <span class="sub2_span_style">신청</span>전화상담(프로그램 및 일정협의 후 이메일, 팩스를 통해 신청서 접수</p>
+                        <div class="sub2_img_wrap">
+                            <div class="imgcontents2_01"></div>
+                            <div class="imgcontents2_02"></div>
+                            <div class="imgcontents2_03"></div>
+                        </div>
+                        <a href="#" class="sub2_reservation">프로그램 신청하기</a>    
+                     </div>
+              
+                <!--end 단체별자리여행-->
+                <!--방방곡곡 천문학투어-->
+               
+                <div class="p_wrap menu1_tabbox" id="menu1_tab3">
+                
+                    <h6 class="sub_content_subtitle">방방곡곡 천문학투어</h6>
+                    
+                    <p class="article_text">우리 역사 속 천문과학을 알아보고 천문 유물을 찾아가보는, 이론과 탐방으로 천문학을 알아가는 프로그램<br><br>
+                    <span class="sub2_span_style">일시</span>4월-10월 중<br>
+                    <span class="sub2_span_style">대상</span>초등 4학년~6학년<br>
+                    <span class="sub2_span_style">장소</span>시립 서울천문대(광진청소년수련관), 매 회 주제 관련 탐방장소<br> 
+                    <span class="sub2_span_style">참가비</span>15000원/회<br> 
+                    <span class="sub2_span_style">신청</span>방문 및 이메일을 통해 선착순 신청서 접수<br>
+                    <div class="sub2_img_wrap">
+                            <div class="imgcontents3_01"></div>
+                            <div class="imgcontents3_02"></div>
+                            <div class="imgcontents3_03"></div>
+                    </div>
+                    <a href="#" class="sub2_reservation">프로그램 신청하기</a> 
+                </div>
+               
+                <!--end 방방곡곡 천문학투어-->
+                <!--천문과학 지식봉사동아리-->
+                <div class="p_wrap menu1_tabbox" id="menu1_tab4">
+                    <h6 class="sub_content_subtitle">천문과학 지식봉사동아리</h6> 
+                    <p class="article_text">
+                     
+                    천문학에 대한 관심을 가진 청소년들이 모여 천문학에 대해 배우고 토론하며 지식봉사를 실천하는 자율형 청소년 동아리<br><br>
+                    <span class="sub2_span_style">일시</span>연중 2,4주 토요일 10:00~12:00 / 월2회<br> 
+                    <span class="sub2_span_style">대상</span>중2~ 고1 청소년 / 연간20명<br>
+                    <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관)<br>
+                    <span class="sub2_span_style">가입비</span>10000원/회<br>
+                    <span class="sub2_span_style">신청</span>메일접수 후 선발(2~3월 중)</p>
+                    <div class="sub2_img_wrap">
+                            <div class="imgcontents4_01"></div>
+                            <div class="imgcontents4_02"></div>
+                            <div class="imgcontents4_03"></div>
+                        </div>
+                        <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+                    </div>
+                   </div> 
+           </div>
+        
+              
+                <!--end 천문과학 지식봉사동아리-->
+                <!--end--> 
+        
+    
+    </section> <!-- end content1 -->
+    <!-- 체험프로그램 -->
+    <section id="sub2_content2">
+       <div class="frame">
+           <div class="sub_content_wrap">
+                <h4 id="sub2_content_title2" class="article_subtitle">체험 프로그램</h4>
+                <!--start-->
+                <div class="h5_wrap">
+                    <h5 class="sub_content_title menu2_tab_btn selected" rel="menu2_tab1">별난 공개관측회</h5>
+                    <h5 class="sub_content_title menu2_tab_btn" rel="menu2_tab2">천문체험의 날</h5>
+                    <h5 class="sub_content_title menu2_tab_btn" rel="menu2_tab3">응답하라 휴스턴</h5>
+                    <h5 class="sub_content_title menu2_tab_btn" rel="menu2_tab4">시끌벅적 과학축제</h5>
+                </div> 
+                
+                <!--별난세상이 열린다-->
+                <div class="p_wrap menu2_tabbox" id="menu2_tab1">
+                    <h6 class="sub_content_subtitle">별★爛(난)세상이 열린다! 공개관측회</h6>  
+                    <!--한자는 빛날(난)-->
+
+                    <p class="article_text">우천시 참가자들을 위해 진행되는 관측회로 재관측의 기회를 제공하고, 
+                    서울시민에게 천문과학 저변확대를 위해 진행되는 프로그램 <br><br>
+
+                    <span class="sub2_span_style">일시</span>매년 9월 4주차 금~일요일 3일간 /10:00~21:00<br>
+                    <span class="sub2_span_style">대상</span>5세 이상 아동, 청소년 및 성인 <br>
+                    <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관)<br>
+                    <span class="sub2_span_style">참가비</span>2000원 /1인<br>
+                    <span class="sub2_span_style">신청</span>사전 홈페이지 예약 및 체험당일 현장 접수</p>
+                    <div class="sub2_img_wrap">
+                        <div class="experience1_01"></div>
+                        <div class="experience1_02"></div>
+                        <div class="experience1_03"></div>
+                    </div>
+                    <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+                    
+               </div>
+                    <!--천문체험의 날-->
+                <div class="p_wrap menu2_tabbox" id="menu2_tab2">
+                    <h6 class="sub_content_subtitle">천문체험의 날</h6> 
+                    <p class="article_text">일식, 유성우와 같이 특별하게 나타나는 천문현상을 알아보는 과학문화 체험 프로그램
+                    <br><br>
+                    <span class="sub2_span_style">일시</span>2월~10월 중 <br>
+                    <span class="sub2_span_style">대상</span>6세 이상 아동, 청소년, 성인<br>
+                    <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관)<br>
+                    <span class="sub2_span_style">참가비</span>5000원 1인<br>
+                    <span class="sub2_span_style">신청</span>홈패이지 예약을 통한 선착순 접수</p>
+                    <div class="sub2_img_wrap">
+                        <div class="experience2_01"></div>
+                        <div class="experience2_02"></div>
+                        <div class="experience2_03"></div>
+                    </div>
+                    <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+                </div>
+                
+                    <!--응답하라 휴스턴-->
+                <div class="p_wrap menu2_tabbox" id="menu2_tab3">   
+                    <h6 class="sub_content_subtitle">응답하라 휴스턴</h6> 
+
+                    <p class="article_text">우주개발 선진국을 방문해 첨단 기술을 견학하고 다른 문화를 경험함으로 견문을 넓히는 글로벌 인재양성을 위한 프로그램 
+                    <br><br>
+                    <span class="sub2_span_style">일시</span>매년 7월~8월 중/ 15일간 <br>
+                    <span class="sub2_span_style">대상</span>중1~고3 <br>
+                    <span class="sub2_span_style">장소</span>미국 휴스턴 스페이스 센터, 뉴욕, 워싱턴D.C 등<br>
+                    <span class="sub2_span_style">참가비</span>6.000.000원 예정<br>
+                    <span class="sub2_span_style">신청</span>홈페이지 예약을 통한 선착순 접수 <br>
+                    <span class="sub2_span_style">프로그램</span>스페이스 센터 캠프참가, 문화체험 및 국립공원방문 등</p>
+                    <div class="sub2_img_wrap">
+                        <div class="experience3_01"></div>
+                        <div class="experience3_02"></div>
+                        <div class="experience3_03"></div>
+                    </div>
+                   <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+               </div>   
+                        
+                    <!-- 시끌벅적 과학축제 -->
+                <div class="p_wrap menu2_tabbox" id="menu2_tab4">
+                    <h6 class="sub_content_subtitle">시끌벅적 과학축제</h6> 
+                    <p class="article_text">4월 과학의 달을 기념하여 진행되는 과학축제로 가족경연대회 및 과학체험부스, 과학실험 교실 등으로 구성된 프로그램 
+                    <br><br>
+                    <span class="sub2_span_style">일시</span>매년 4월 4주차 토요일, 일요일 양일간 / 10:00~17:00<br>
+                    <span class="sub2_span_style">대상</span>5세 이상 아동, 청소년 및 성인 <br>
+                    <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관) 일대<br>
+                    <span class="sub2_span_style">참가비</span>2000원 /1인<br>
+                    <span class="sub2_span_style">신청</span>사전 홈페이지 예약 및 체험당일 현장 접수</p>
+                    <div class="sub2_img_wrap">
+                        <div class="experience4_01"></div>
+                        <div class="experience4_02"></div>
+                        <div class="experience4_03"></div>
+                    </div>
+                    <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+               </div>
+                <!--end--> 
+           </div>
+       </div>
+    </section> <!-- end content2 -->
+    <!--문화프로그램-->
+    <section id="sub2_content3">
+       <div class="frame">
+           <div class="sub_content_wrap">
+                <h4 id="sub2_content_title3" class="article_subtitle">문화 프로그램</h4>
+                <!--start-->
+            <div class="h5_wrap">
+                <h5 class="sub_content_title menu3_tab_btn selected" rel="menu3_tab1">과학을 품은 백일장</h5>
+                <h5 class="sub_content_title menu3_tab_btn" rel="menu3_tab2">우주 톡투미</h5>
+            </div>
+               
+            <!-- 상상의 날개를 달다! 과학을 품은 백일장 -->
+            <div class="p_wrap menu3_tabbox" id="menu3_tab1">
+                <h6 class="sub_content_subtitle">상상의 날개를 달다! 과학을 품은 백일장</h6>
+                <p class="article_text">4월 과학의 달을 기념하여 진행되는 프로그램으로 과학을 주제로 글과 그림으로 상상의 날개를 펼치는 무료 참여 프로그램<br><br>
+                <span class="sub2_span_style">일시</span>매년 4월 중 <br>
+                <span class="sub2_span_style">대상</span>5세 이상 유아 및 초등, 중등, 고등학생 <br>
+                <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관) 일대<br>
+                <span class="sub2_span_style">참가비</span>무료<br>
+                <span class="sub2_span_style">신청</span>사전 온라인 예약</p>
+                <div class="sub2_img_wrap">
+                        <div class="culture1_01"></div>
+                        <div class="culture1_02"></div>
+                        <div class="culture1_03"></div>
+                    </div>
+                <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+            </div>
+
+                <!-- 우주 톡투미 -->
+            <div class="p_wrap menu3_tabbox" id="menu3_tab2">    
+                <h6 class="sub_content_subtitle">우주 톡투미</h6> 
+                <p class="article_text">천문강연을 통하여 우주에 대한 호기심을 자극하고, 우주에 대한 궁금증을 풀어보자 <br><br>
+
+                <span class="sub2_span_style">일시</span>2월~ 11월중<br> 
+                <span class="sub2_span_style">대상</span>학교 내 천문 관련 동아리 및 천문에 관심이 있는 단체 <br>
+                <span class="sub2_span_style">장소</span>시립서울천문대(광진청소년수련관)<br>
+                <span class="sub2_span_style">참가비</span>무료 <br>
+                <span class="sub2_span_style">신청</span>이메일을 통한 신청서 접수</p>
+                <div class="sub2_img_wrap">
+                        <div class="culture2_01"></div>
+                        <div class="culture2_02"></div>
+                        <div class="culture2_03"></div>
+                    </div>
+                <a href="#" class="sub2_reservation">프로그램 신청하기</a>
+            </div>
+                <!--end--> 
+           </div>
+       </div>
+    </section><!-- end content3 -->
+    
+    <!--end section 여기까지 변경------------------------------------>
+    
+    <!--start footer-->
+    <div id="schedule_wrap">
+       <div>
+            <div id="schedule">
+                       <p class="schedule_title"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;관람안내</p>
+                       <p class="schedule_txt">시립서울천문대는 <span>사전예약제</span>로 운영됩니다.</p>
+                       <a href="#">예약 안내<span></span></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+       <div id="footer_wrap">
+           <div class="footer_box">
+               <img src="images/logo_160_dfdfdf.png" alt="시립서울천문대 로고">
+               <p class="subtitle_inFooter">시립서울천문대 Seoul Municipal Observatory</p>
+               <p class="text_inFoot">
+                   (04970) 서울시 광진구 구천면로 2(광장동 313-3)<br>
+                   Tel. 02)2204-3100<br>
+                   Fax. 02)2204-3150<br>
+                   사업자등록번호 : 206-82-65437<br>
+                   Copyright &copy; 2018 서울시립광진청소년수련관<br>all rights are reserved.
+               </p>
+               
+           </div>
+           <div class="footer_box">
+                <h4 id="call">문의전화<span>02)2204-3190</span></h4>
+                <p class="customerCenter">
+                    <span>문의전화 운영시간</span> 10:00 - 18:00
+                </p>
+                <div>
+                    <h4>주차안내</h4>
+                    <table>
+                        <tr>
+                            <th>운영시간</th>
+                            <td>평일 16:00 - 22:00<br>주말&middot;공휴일 09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>이용료</th>
+                            <td>천문프로그램 참가시 기본 3시간 무료</td>
+                        </tr>
+                    </table>
+                </div>
+           </div>
+           <div class="footer_box">
+               <h4>바로가기</h4>
+               <ul class="snsicons">
+                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+               <div class="sitemap">기관사이트 바로가기 <span>▼</span>
+                   <ul>
+                       <li><a href="#">서울특별시</a></li>
+                       <li><a href="#">한국천문연구원</a></li>
+                       <li><a href="#">국립중앙과학관</a></li>
+                       <li><a href="#">광진청소년수련관</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </footer><!--end document-->
+</div>
+</body>
+</html>

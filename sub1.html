@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>시립서울천문대 - 천문대소개</title>
+    <!-- jQuery CDN (**always Top**)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery UI CDN (and next...)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--font awesome-->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!--style.CSS-->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index_1.js"></script>
+   <script src='js/prefixfree.min.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArpF-KYMjsTKxUJ9eXTRXGsMAS9iLOcFE&callback=initMap"></script>
+
+</head>
+<body id="sub1">
+<div class="page">
+    <header>
+        <div id="header_wrap">
+            <h1 id="logo"><a href="index.html"><img src="images/logo_160_white.png" alt="시립서울천문대"></a></h1>
+            <h1 id="mobile_nav"><button><i class="fas fa-bars" onclick="mobile_navon()"></i></button></h1>
+            <h1 id="mobile_login"><buttom><i class="fas fa-user-circle"></i></buttom></h1>
+            <nav id="gnb" class='nav_off'>
+                <ul>
+                    <li><a href="sub1.html">천문대소개</a>
+                        <ul class="depth2">
+                            <li><a href="sub1.html">천문대 소개</a></li>
+                            <li><a href="sub1.html">이용요금</a></li>
+                            <li><a href="sub1.html">이용안내</a></li>
+                            <li><a href="sub1.html">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a>시설안내</a>
+                        <ul class="depth2">
+                            <li><a href="#">별찬</a></li>
+                            <li><a href="#">별오름</a></li>
+                            <li><a href="#">천체망원경<br>실습교육장</a></li>
+                            <li><a href="#">천체과학교육실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub2.html">프로그램</a>
+                        <ul class="depth2">
+                            <li><a href="sub2.html">교육 프로그램</a></li>
+                            <li><a href="sub2.html">체험 프로그램</a></li>
+                            <li><a href="sub2.html">문화 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li><a>예약</a>
+                        <ul class="depth2">
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">환불규정</a></li>
+                        </ul>
+                    </li>
+                    <li><a>천문소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">천문우주 이야기</a></li>
+                            <li><a href="#">천문우주 소식지</a></li>
+                    </ul>
+                    </li>
+                    <li><a>참여마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">이용후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>        
+            <nav id="nav_sub">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--end header-->
+    <!---------start section 여기서부터 변경------------------------->
+    <section id="sub1_bg_fixed">
+        <div class="frame">
+            <div class="sub_content_wrap">
+                <article id="sub1_title">
+                    <h2 class="sub_section_title">천문대 소개</h2>
+                    <h3 class="article_title">시립서울천문대에 대해 궁금하신가요?</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div id="sub1_menu_tab">
+        <div>
+            <div class="sub_content_wrap">
+                <ul>
+                    <li><button onclick="moveToContent1('1')">천문대소개</button></li>
+                    <li><button onclick="moveToContent1('2')">이용요금</button></li>
+                    <li><button onclick="moveToContent1('3')">이용안내</button></li>
+                    <li><button onclick="moveToContent1('4')">찾아오시는 길</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 천문대소개 -->
+    <section id="sub1_content1">
+       <div class="frame">
+           <div class="sub_content_wrap">
+                <h4 id="sub1_content_title1" class="article_subtitle">천문대 소개</h4>
+                <div class="article_text">
+                     <div class="sub_content_top">
+                     <h5 class="sub1_content_title"><i class="fas fa-star fa-spin"></i>별난 세상과 함께하는 <span>별자리 여행</span></h5>
+                     <p class="content1_1">별을 보려면 도시를 떠나 깊은 산 속으로 들어가야 하기에 별이 쏟아지는 밤하늘은 도시 아이들에게 멀기만 한 세상입니다. 계속되는 교육 과정 개정으로 과학책에 별에 관한 교육 부분은 늘어가지만 넓은우주를 가르치고 체험하기에는 힘든 부분이 많습니다. 이런 문제를 해결하고자 서울시가 건립하고 (사)흥사단이 운영하는 시립서울천문대가 있습니다.<br>도시의 불빛 때문에 잃어버렸다고 생각한 밤하늘의 낭만을 18m 돔스크린과 600mm대형망원경에 담아, 서울시민들에게 별빛을 돌려드리고자 다양한 프로그램을 구성, 운영하고 있습니다.</p>
+                     <div class="responsive_wrap">
+                         <div class="responsive">
+                         <div class="gallery">
+                            <a href="#">
+                            <img src="images/sub1_01.jpg" alt="Trolltunga Norway" >
+                            </a>
+                         <div class="desc">시립서울천문대</div>
+                         </div>
+                         </div>
+                     <div class="responsive">
+                         <div class="gallery">
+                             <a href="#">
+                             <img src="images/sub1_02.jpg" alt="Forest">
+                             </a>
+                         <div class="desc">겨울철 별자리</div>
+                         </div>
+                     </div>
+
+                     <div class="responsive">
+                         <div class="gallery">
+                             <a href="#">
+                             <img src="images/sub1_03.png" alt="Northern Lights">
+                             </a>
+                             <div class="desc">천문대에서 본 천체</div>
+                         </div>
+                     </div>
+
+                     <div class="responsive">
+                         <div class="gallery">
+                             <a href="#">
+                             <img src="images/sub1_04.jpg" alt="Mountains">
+                             </a>
+                         <div class="desc">별빛 감상</div>
+                         </div>
+                     </div>
+                    </div>
+                     </div>
+                     <div class="sub_content_box">
+                         <h6 class="sub1_content_subtitle">일반현황</h6>
+                         <p><span>주소</span> [04970] 서울시 광진구 구천면로 2(광진구 광장동 313-3)<br>
+                         <span>면적</span> 천문시설 건물면적 627.18제곱미터<br>
+                         <span>구성</span> 천체투영실, 천체관측실, 천체망원경실습교육장, 천체과학교육</p>
+                     </div>
+                </div>
+           </div>
+       </div>
+    </section>
+    <!-- 이용요금 -->
+    <section id="sub1_content2">
+        <div class="frame">
+            <div class="sub_content_wrap">
+                <h4 id="sub1_content_title2" class="article_subtitle">이용요금</h4>
+                <div class="sub_content_top">
+                    <h5 class="sub1_content_title">이용요금을 <span>확인하세요</span></h5>
+                    <p class="sub3_copy">천문대 이용요금 및 천문대 캠프 참가비와<br> 할인대상 정보를 안내해드립니다</p>
+                </div>
+                <h6 class="sub1_content_subtitle">모집 및 진행</h6>
+                <table class="article_text">
+                    <tr>
+                        <th>구분</th>
+                        <th>프로그램명</th>
+                        <th>대상</th>
+                        <th>금액</th>
+                        <th>비고</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">연중상시</td>
+                        <td rowspan="3">도심 속 별빛산책</td>
+                        <td>유아</td>
+                        <td>2,500원/1인</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>청소년</td>
+                        <td>3,500원/1인</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>성인</td>
+                        <td>4,500원/1인</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">단체별자리여행</td>
+                        <td>유아</td>
+                        <td>2,500원/1인</td>
+                        <td>기본 60,000원<br>(30명 초과시 1인당 2,000원)</td>
+                    </tr>
+                    <tr>
+                        <td>청소년</td>
+                        <td>3,500원/1인</td>
+                        <td>기본 90,000원<br>(30명 초과시 1인당 3,000원)</td>
+                    </tr>
+                    <tr>
+                        <td>성인</td>
+                        <td>4,500원/1인</td>
+                        <td>기본 120,000원<br>(30명 초과시 1인당 4,000원)</td>
+                    </tr>
+                </table>
+                <h6 class="sub1_content_subtitle">체험 및 문화 프로그램</h6>
+                <table class="article_text">
+                    <tr>
+                        <th>구분</th>
+                        <th>프로그램명</th>
+                        <th>대상</th>
+                        <th>금액</th>
+                        <th>비고</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">체험프로그램</td>
+                        <td>별난 공개관측회</td>
+                        <td>봄, 가을 1박2일</td>
+                        <td>2,000원/1인</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>시끌벅적 과학축제</td>
+                        <td>여름 2박 3일</td>
+                        <td>2,000원/1인</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>천문체험의 날</td>
+                        <td>겨울 2박 3일</td>
+                        <td>5,000원/1인</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>응답하라 휴스턴</td>
+                        <td>14박 15일</td>
+                        <td>6,000,000원 예정</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--이용안내-->
+    <section id="sub1_content3">
+        <div class="frame">
+            <div class="sub_content_wrap">
+               <p class="emph_box">중요</p>
+                <h4 id="sub1_content_title3" class="article_subtitle">이용안내</h4>
+                <div class="aricle_text">
+                    <div class="sub_content_top">
+                        <h5 class="sub1_content_title">이용안내사항을 <span>숙지</span>해주세요!</h5>
+                    <p class="sub3_copy">시립광진청소년수련관 시설을 이용함에 있어<br> 아래 모든 사항을 숙지하고 성실히 준수하여야 합니다.</p>
+                    </div>
+                    <div class="sub_content_box">
+                    <!--making box-->
+                    <div class="sub1_content3_box_wrap">
+                        <div class="sub1_content3_box">
+                            <h6 class="sub1_content_subtitle">사전예약제</h6>
+                            <p class="article_text">
+                            <i class="fas fa-angle-right"></i> 시립서울천문대의 대부분의 프로그램은 사전예약을 통해 진행됩니다.<br>
+                            (참가자들에게 보다 높은 질의 체험을 제공하기 위함입니다.)<br>
+                            <i class="fas fa-angle-right"></i> 예약 없이 방문 시 프로그램 참가가 어려운 점 양해 부탁 드립니다.<br>
+                            (축제 프로그램의 일부는 예약 없이 당일 접수 후 참여 가능)</p>
+                        </div>
+                        <div class="sub1_content3_box">
+                             <h6 class="sub1_content_subtitle">체험비</h6>
+                             <p class="article_text">
+                             <i class="fas fa-angle-right"></i> 체험비는 프로그램 별로 상이합니다. 프로그램 안내 또는 공지사항을 확인해주세요.<br>
+                             <i class="fas fa-angle-right"></i> 입장료 할인 대상자는 관련자료(증명서 등)를 지참하여 주시기 바랍니다.</p>
+                        </div>
+                    </div>
+                    <div class="sub1_content3_box_wrap">
+                        <div class="sub1_content3_box"> 
+                            <h6 class="sub1_content_subtitle">주차</h6>
+                            <p class="article_text">
+                            <i class="fas fa-angle-right"></i> 천문대 주차장이 협소하여 대중교통 이용을 권장합니다.<br>
+                            <i class="fas fa-angle-right"></i> 천문대 앞 도로에는 주차가 불가능합니다. (과태료 부과 및 견인 가능성 있음)<br>
+                            <i class="fas fa-angle-right"></i> 25인승 이상 버스는 프로그램 진행 중에는 다른 곳에서 대기해야 합니다.</p>
+                        </div>
+                        <div class="sub1_content3_box">
+                            <h6 class="sub1_content_subtitle">주의사항</h6>
+                            <p class="article_text">
+                            <i class="fas fa-angle-right"></i> 빛이 나는 물건 지참, 신발 착용은 삼가주세요.<br>
+                            (어둠에 적응한 눈이 더 많은 별빛을 찾을 수 있습니다.)<br>
+                            <i class="fas fa-angle-right"></i> 시설 이용 중 음식물 섭취는 불가능합니다. (캠프 프로그램 제외)<br>
+                            체험 시 참가자의 과실로 발생하는 안전사고, 분실 등에 관해 배상을 요구할 수 없습니다.</p>
+                        </div>
+                    </div>
+                    <!-- end making box -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 찾아오시는 길 -->
+    <section id="sub1_content4">
+        <div class="frame">
+            <div class="sub_content_wrap">
+                <h4 id="sub1_content_title4" class="article_subtitle">찾아오시는 길</h4>
+                <div class="aricle_text">
+                    <div class="sub_content_box">
+                        <h6 class="sub1_content_subtitle">대중교통</h6>
+                        <p class="article_text">
+                        지하철 : 5호선 광나루역 2번 출구 맞은편 50m<br>
+                        버스 : 시내(파랑) : 130, 300, 370<br>
+                        광역(빨강) : 9301, 1113-1<br>
+                        경기도버스 : 1, 1-1, 1-5, 1-6, 9, 9-1, 9-2, 9-3, 9-5, 9-6, 11, 70, 112-3, 1115-3, 2000-1, 2002-2<br>
+                            마을버스 : 광진01 (강변역-광진정보도서관)</p>
+
+                        <h6 class="sub1_content_subtitle">주차안내</h6>
+                        <p class="article_text">
+                        운영시간 : 평일 06;00 - 22:00, 토,일/공휴일 : 09:00 - 19:00<br>
+                        이용료 : 천문프로그램 참가시 기본 3시간 무료<br>
+                        일반이용 : 기본 30분 1,000원(초과 10분당 500원)<br>
+                        기타 : 승용차요일제 전자태그 부착 차량만 출입 가능<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
+    <!--end section 여기까지 변경------------------------------------>
+    
+    <!--start footer-->
+    <div id="schedule_wrap">
+       <div>
+            <div id="schedule">
+                       <p class="schedule_title"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;관람안내</p>
+                       <p class="schedule_txt">시립서울천문대는 <span>사전예약제</span>로 운영됩니다.</p>
+                       <a href="#">예약 안내<span></span></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+       <div id="footer_wrap">
+           <div class="footer_box">
+               <img src="images/logo_160_dfdfdf.png" alt="시립서울천문대 로고">
+               <p class="subtitle_inFooter">시립서울천문대 Seoul Municipal Observatory</p>
+               <p class="text_inFoot">
+                   (04970) 서울시 광진구 구천면로 2(광장동 313-3)<br>
+                   Tel. 02)2204-3100<br>
+                   Fax. 02)2204-3150<br>
+                   사업자등록번호 : 206-82-65437<br>
+                   Copyright &copy; 2018 서울시립광진청소년수련관<br>all rights are reserved.
+               </p>
+               
+           </div>
+           <div class="footer_box">
+                <h4 id="call">문의전화<span>02)2204-3190</span></h4>
+                <p class="customerCenter">
+                    <span>문의전화 운영시간</span> 10:00 - 18:00
+                </p>
+                <div>
+                    <h4>주차안내</h4>
+                    <table>
+                        <tr>
+                            <th>운영시간</th>
+                            <td>평일 16:00 - 22:00<br>주말&middot;공휴일 09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>이용료</th>
+                            <td>천문프로그램 참가시 기본 3시간 무료</td>
+                        </tr>
+                    </table>
+                </div>
+           </div>
+           <div class="footer_box">
+               <h4>바로가기</h4>
+               <ul class="snsicons">
+                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+               <div class="sitemap">기관사이트 바로가기 <span>▼</span>
+                   <ul>
+                       <li><a href="#">서울특별시</a></li>
+                       <li><a href="#">한국천문연구원</a></li>
+                       <li><a href="#">국립중앙과학관</a></li>
+                       <li><a href="#">광진청소년수련관</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </footer><!--end document-->
+</div>
+
+
+</body>
+</html>

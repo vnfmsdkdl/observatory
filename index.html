@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+	<title>시립서울천문대</title>
+	<!-- jQuery CDN (**always Top**)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery UI CDN (and next...)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--font awesome-->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!--style.CSS-->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index_1.js"></script>
+	<script src='js/prefixfree.min.js'></script>
+</head>
+<body id="main">
+<div class="page">
+    <div id="tonedown" class=""></div>
+    <div id="pop_window" class="">
+        <button class="pop_close"><i class="fas fa-times"></i></button>
+        <div class="pop_content_wrap">
+            <h4>관람 예약</h4>
+            <div class="pop_p_wrap">
+                <p class="pop_title"><i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp;예약일정</p>
+                <p class="month"><i class="fas fa-caret-left"></i>2018년 2월<i class="fas fa-caret-right"></i></p>
+                <table class="calender">
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td class="empty">18</td>
+                        <td>19</td>
+                        <td class="empty">20</td>
+                        <td class="empty">21</td>
+                        <td class="empty">22</td>
+                        <td class="empty">23</td>
+                        <td class="empty">24</td>
+                    </tr>
+                    <tr>
+                        <td class="empty">25</td>
+                        <td>26</td>
+                        <td class="empty">27</td>
+                        <td class="empty">28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                 <p class="pop_title"><i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp;예약자 정보</p>
+                 <input type="text" id="name" placeholder="이름">
+                 <input type="tel" id="tel" placeholder="연락처">
+                 <input type="email" id="email" placeholder="이메일">
+                 <input type="number" id="people" placeholder="동반관람인원">
+                 <button class="complete">예약하기</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="header_wrap">
+            <h1 id="logo"><a href="#"><img src="images/logo_160_white.png" alt="시립서울천문대"></a></h1>
+            <h1 id="mobile_nav"><button><i class="fas fa-bars" onclick="mobile_navon()"></i></button></h1>
+            <h1 id="mobile_login"><button><i class="fas fa-user-circle"></i></button></h1>
+            <nav id="gnb" class='nav_off'>
+                <ul>
+                    <li><a href="sub1.html">천문대소개</a>
+                        <ul class="depth2">
+                            <li><a href="sub1.html">천문대 소개</a></li>
+                            <li><a href="sub1.html">이용요금</a></li>
+                            <li><a href="sub1.html">이용안내</a></li>
+                            <li><a href="sub1.html">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a>시설안내</a>
+                        <ul class="depth2">
+                            <li><a href="#">별찬</a></li>
+                            <li><a href="#">별오름</a></li>
+                            <li><a href="#">천체망원경<br>실습교육장</a></li>
+                            <li><a href="#">천체과학교육실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub2.html">프로그램</a>
+                        <ul class="depth2">
+                            <li><a href="sub2.html">교육 프로그램</a></li>
+                            <li><a href="sub2.html">체험 프로그램</a></li>
+                            <li><a href="sub2.html">문화 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li><a>예약</a>
+                        <ul class="depth2">
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">환불규정</a></li>
+                        </ul>
+                    </li>
+                    <li><a>천문소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">천문우주 이야기</a></li>
+                            <li><a href="#">천문우주 소식지</a></li>
+                    </ul>
+                    </li>
+                    <li><a>참여마당</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">이용후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>        
+            <nav id="nav_sub">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--end header-->
+    <!--start section-->
+    <section id="bg_fix1">
+        <div id="main_copy">
+            <h2><strong>별</strong> 볼일 있는 <strong>서울</strong></h2>
+            <p>&nbsp;&nbsp;&nbsp;도심 속에서 즐기는 별난 세상!<br><strong>시립서울천문대</strong>에서 느껴보세요.</p>
+        </div>
+        <canvas id="canvas"></canvas>
+    </section>
+    
+    <section id="content1">
+        <h2 class="content_title"><span>추천</span>프로그램 소개</h2>
+        <p class="content_sub">서울 도심 속에서 즐기는 천문학놀이!<br>재미있게 놀면서 배울 수 있는 다양한 프로그램이 준비되어 있어요.</p>
+        <div class="banner_wrap">
+            <div class="banner_program">
+                <a>
+                    <h3>Education</h3>
+                    <ul>
+                        <li></li>
+                        <li>도심 속 별빛산책</li>
+                        <li>단체 별자리여행</li>
+                        <li>방방곡곡 천문학투어</li>
+                        <li>천문과학지식 봉사동아리</li>
+                    </ul>
+                </a>
+            </div>    
+            <div class="banner_program">
+                <a>
+                    <h3>Activity</h3>
+                    <ul>
+                        <li></li>
+                        <li>별난 공개관측회</li>
+                        <li>천문체험의 날</li>
+                        <li>응답하라 휴스턴</li>
+                        <li>시끌벅적 과학축제</li>
+                    </ul>
+                </a>
+            </div>    
+            <div class="banner_program">
+                <a>
+                    <h3>Culture</h3>
+                    <ul>
+                        <li></li>
+                        <li>과학을 품은 백일장</li>
+                        <li>우주 톡투미</li>
+                    </ul>
+                </a>
+            </div>      
+        </div>
+        <button id="fastReserv">빠른 예약하기</button>   
+    </section>
+    <section id="bg_fix2">
+        <div id="bg_fix2_wrap">
+            <div>
+            <div id="bg_fix2_left">
+                <h4><a>공지사항</a></h4>
+            </div>
+            <div id="bg_fix2_right">
+                <table id="notice_main">
+                    <tr>
+                        <td>2018년 3월 도심 속 별빛산책 접수안내</td>
+                        <td>2018-02-10</td>
+                    </tr>
+                    <tr>
+                        <td>홈페이지 개편으로 인한 서비스 일시중단 안내</td>
+                        <td>2018-02-10</td>
+                    </tr>
+                    <tr>
+                        <td>2018년 단체별자리여행 참가비 인상 안내</td>
+                        <td>2018-02-10</td>
+                    </tr>
+                    <tr>
+                        <td>2018년 제6기 천문과학지식봉사동아리 최종합격자 발표 및 발대식 공지</td>
+                        <td>2018-02-10</td>
+                    </tr>
+                    <tr>
+                        <td>2018년 제6기 천문과학지식봉사동아리 서류 합격자 발표 및 면접일정 공지</td>
+                        <td>2018-02-06</td>
+                    </tr>
+                </table>
+                <a href="#">더보기<span><i class="fas fa-angle-right"></i></span></a>
+            </div>
+            </div>
+        </div>
+    </section><!--end section-->
+    <!--start footer-->
+    <div id="schedule_wrap">
+        <div>
+            <div id="schedule">
+               <p class="schedule_title"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;관람안내</p>
+               <p class="schedule_txt">시립서울천문대는 <span>사전예약제</span>로 운영됩니다.</p>
+               <a href="#">예약 안내<span></span></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+       <div id="footer_wrap">
+           <div class="footer_box">
+               <img src="images/logo_160_dfdfdf.png" alt="시립서울천문대 로고">
+               <p class="subtitle_inFooter">시립서울천문대 Seoul Municipal Observatory</p>
+               <p class="text_inFoot">
+                   (04970) 서울시 광진구 구천면로 2(광장동 313-3)<br>
+                   Tel. 02)2204-3100<br>
+                   Fax. 02)2204-3150<br>
+                   사업자등록번호 : 206-82-65437<br>
+                   Copyright &copy; 2018 서울시립광진청소년수련관<br>Allrights are reserved.
+               </p>
+               
+           </div>
+           <div class="footer_box">
+                <h4 id="call">문의전화<span>02)2204-3190</span></h4>
+                <p class="customerCenter">
+                    <span>문의전화 운영시간</span> 10:00 - 18:00
+                </p>
+                <div>
+                    <h4>주차안내</h4>
+                    <table>
+                        <tr>
+                            <th>운영시간</th>
+                            <td>평일 16:00 - 22:00<br>주말&middot;공휴일 09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>이용료</th>
+                            <td>천문프로그램 참가시 기본 3시간 무료</td>
+                        </tr>
+                    </table>
+                </div>
+           </div>
+           <div class="footer_box">
+               <h4>바로가기</h4>
+               <ul class="snsicons">
+                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+               <div class="sitemap">기관사이트 바로가기 <span>▼</span>
+                   <ul>
+                       <li><a href="#">서울특별시</a></li>
+                       <li><a href="#">한국천문연구원</a></li>
+                       <li><a href="#">국립중앙과학관</a></li>
+                       <li><a href="#">광진청소년수련관</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </footer><!--end document-->
+</div><!--end #page-->
+</body>
+</html>
